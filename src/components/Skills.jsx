@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Server, Layout, Settings, Terminal } from 'lucide-react';
 
@@ -6,61 +6,19 @@ const categories = [
   {
     title: 'Backend',
     Icon: Server,
-    skills: [
-      { name: 'Java', level: 90 },
-      { name: 'Spring Boot', level: 88 },
-      { name: 'Hibernate / JPA', level: 82 },
-    ],
+    skills: ['Java', 'Spring Boot', 'Hibernate / JPA'],
   },
   {
     title: 'Frontend',
     Icon: Layout,
-    skills: [
-      { name: 'Angular', level: 85 },
-      { name: 'React.js', level: 80 },
-    ],
+    skills: ['Angular', 'React.js'],
   },
   {
     title: 'DevOps & DB',
     Icon: Settings,
-    skills: [
-      { name: 'Docker', level: 85 },
-      { name: 'PostgreSQL', level: 88 },
-      { name: 'Bash Scripts', level: 72 },
-    ],
+    skills: ['Docker', 'PostgreSQL', 'Bash Scripts'],
   },
 ];
-
-const getLevelLabel = (level) => {
-  if (level >= 85) return 'Avançado';
-  if (level >= 70) return 'Intermediário';
-  return 'Básico';
-};
-
-const SkillBar = ({ level }) => {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
-      { threshold: 0.3 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div className="skill-item__bar" ref={ref}>
-      <div
-        className="skill-item__bar-fill"
-        style={{
-          transform: visible ? `scaleX(${level / 100})` : 'scaleX(0)',
-        }}
-      />
-    </div>
-  );
-};
 
 const Skills = () => {
   return (
@@ -109,16 +67,11 @@ const Skills = () => {
                 <h3 className="skill-card__title">{cat.title}</h3>
               </div>
 
-              <div className="skill-card__list">
+              <div className="skill-card__list--simple">
                 {cat.skills.map((skill) => (
-                  <div key={skill.name} className="skill-item">
-                    <div className="skill-item__info">
-                      <span className="skill-item__name">{skill.name}</span>
-                      <span className="skill-item__level">
-                        {getLevelLabel(skill.level)}
-                      </span>
-                    </div>
-                    <SkillBar level={skill.level} />
+                  <div key={skill} className="skill-item--simple">
+                    <div className="skill-dot" />
+                    <span className="skill-item__name">{skill}</span>
                   </div>
                 ))}
               </div>

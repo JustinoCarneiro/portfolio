@@ -47,7 +47,7 @@ const Hero = () => {
           >
             Desenvolvimento de sistemas{' '}
             <span className="text-highlight">robustos e escaláveis</span>.
-            Especialista em transformar requisitos complexos em soluções elegantes.
+            Transformando requisitos complexos em soluções elegantes.
           </motion.p>
 
           <motion.div

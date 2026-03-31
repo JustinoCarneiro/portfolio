@@ -19,8 +19,8 @@ const About = () => {
             </h2>
             <p>
               Desenvolvedor Full Stack e estudante de Engenharia da Computação na UFC,
-              com experiência prática em estágios de TI (TV Jangadeiro, CITINOVA, GTEL)
-              e desenvolvimento de sistemas reais para os laboratórios Labtrama e Labfor.
+              com experiência prática em estágios de TI (TV Jangadeiro, CITINOVA — Fundação de Ciência, Tecnologia e Inovação de Fortaleza, GTEL — Grupo de Pesquisa em Telecomunicações, MOBIT — Mobilidade, Iluminação e Tecnologia)
+              e cooperação em projetos com o DET (Departamento de Transportes - UFC) e Labifor (Laboratório de Inovação de Fortaleza).
             </p>
             <p>
               Sou adepto do <span className="text-highlight">Vibe Coding</span> —
@@ -55,7 +55,7 @@ const About = () => {
                 <div>
                   <h4 className="about__highlight-title">Laboratórios de Tecnologia</h4>
                   <p className="about__highlight-desc">
-                    Atuação nos laboratórios Labtrama e Labfor
+                    DET (UFC) e Labifor (CITINOVA)
                   </p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const About = () => {
                 <div>
                   <h4 className="about__highlight-title">Experiência Profissional</h4>
                   <p className="about__highlight-desc">
-                    TV Jangadeiro · CITINOVA · GTEL · MOBIT
+                    Jangadeiro · CITINOVA · GTEL · MOBIT
                   </p>
                 </div>
               </div>
