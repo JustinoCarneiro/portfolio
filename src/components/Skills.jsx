@@ -26,9 +26,10 @@ const Skills = () => {
       <div className="container">
         <div className="skills__header">
           <motion.div
+            style={{ opacity: 0 }}
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="section__title">
               Habilidades <span className="accent">técnicas</span>
@@ -55,11 +56,12 @@ const Skills = () => {
             <motion.div
               key={cat.title}
               className="skill-card"
+              style={{ opacity: 0 }}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              viewport={{ once: true }}
-            >
+              viewport={{ once: true, margin: "-50px" }}
+>
               <div className="skill-card__header">
                 <div className="skill-card__icon">
                   <cat.Icon size={18} />

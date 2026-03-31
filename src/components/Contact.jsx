@@ -50,9 +50,10 @@ const Contact = () => {
       <div className="container">
         <div className="contact__grid">
           <motion.div
+            style={{ opacity: 0 }}
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
           >
             <h2 className="section__title">
               Vamos <span className="accent">conversar</span>?
@@ -97,9 +98,10 @@ const Contact = () => {
 
           <motion.div
             className="contact__form-card"
+            style={{ opacity: 0 }}
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
           >
             <form onSubmit={handleSubmit} className="contact__form">
               <div className="form-group">

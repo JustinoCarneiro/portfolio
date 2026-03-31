@@ -671,7 +671,7 @@ input, textarea {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   padding: 2.5rem;
-  transition: all var(--transition-slow);
+  transition: background var(--transition-slow), border-color var(--transition-slow), box-shadow var(--transition-slow);
   position: relative;
   overflow: hidden;
 }
@@ -830,7 +830,7 @@ input, textarea {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   padding: 2.25rem;
-  transition: all var(--transition-smooth);
+  transition: background var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth), transform var(--transition-smooth);
 }
 
 .skill-card:hover {
@@ -929,7 +929,7 @@ input, textarea {
   padding: 1.1rem 1.25rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
-  transition: all var(--transition-smooth);
+  transition: background var(--transition-smooth), border-color var(--transition-smooth), color var(--transition-smooth);
 }
 
 .contact__link-card:hover {
@@ -979,7 +979,7 @@ input, textarea {
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   font-weight: 500;
-  transition: all var(--transition-smooth);
+  transition: background var(--transition-smooth), border-color var(--transition-smooth), color var(--transition-smooth);
 }
 
 .contact__social-btn:hover {

@@ -56,9 +56,10 @@ const Projects = () => {
       <div className="container">
         <motion.div
           className="section__header section__header--center"
+          style={{ opacity: 0 }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
         >
           <h2 className="section__title">
             Projetos <span className="accent">Principais</span>
@@ -77,9 +78,9 @@ const Projects = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-50px" }}
               onClick={() => setSelectedProject(project)}
-              style={{ cursor: 'pointer' }}
+              style={{ opacity: 0, cursor: 'pointer' }}
             >
               <div className="project-card__header">
                 <div className="project-card__icon">
