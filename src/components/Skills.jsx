@@ -9,7 +9,6 @@ const categories = [
     skills: [
       { name: 'Java', level: 90 },
       { name: 'Spring Boot', level: 88 },
-      { name: 'Spring Security (JWT)', level: 80 },
       { name: 'Hibernate / JPA', level: 82 },
     ],
   },
@@ -19,8 +18,6 @@ const categories = [
     skills: [
       { name: 'Angular', level: 85 },
       { name: 'React.js', level: 80 },
-      { name: 'TypeScript', level: 82 },
-      { name: 'SCSS / SASS', level: 78 },
     ],
   },
   {
@@ -28,7 +25,6 @@ const categories = [
     Icon: Settings,
     skills: [
       { name: 'Docker', level: 85 },
-      { name: 'Docker Compose', level: 82 },
       { name: 'PostgreSQL', level: 88 },
       { name: 'Bash Scripts', level: 72 },
     ],
