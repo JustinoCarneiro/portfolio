@@ -73,7 +73,7 @@ const Skills = () => {
             viewport={{ once: true }}
           >
             <h2 className="section__title">
-              Habilidades <span className="accent">Técnicas</span>
+              Habilidades <span className="accent">técnicas</span>
             </h2>
             <p className="section__subtitle">
               Conjunto de ferramentas e tecnologias que utilizo para criar
