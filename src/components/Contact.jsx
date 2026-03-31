@@ -55,7 +55,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <h2 className="section__title">
-              Vamos <span className="accent">Conversar</span>?
+              Vamos <span className="accent">conversar</span>?
             </h2>
             <p className="section__subtitle" style={{ marginBottom: '2.5rem' }}>
               Estou sempre aberto a novas oportunidades, colaborações ou apenas
@@ -150,8 +150,8 @@ const Contact = () => {
                   }
                 />
               </div>
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 disabled={isSubmitting}
                 className={`btn btn--primary btn--full ${isSubmitting ? 'btn--loading' : ''}`}
               >
@@ -159,13 +159,13 @@ const Contact = () => {
               </button>
 
               {isSuccess && (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="contact__success-msg"
-                  style={{ 
-                    marginTop: '1rem', 
-                    color: '#10b981', 
+                  style={{
+                    marginTop: '1rem',
+                    color: '#10b981',
                     fontWeight: '500',
                     textAlign: 'center',
                     background: 'rgba(16, 185, 129, 0.1)',
