@@ -17,7 +17,7 @@ const Contact = () => {
     setIsSuccess(false);
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/marcosjustino161@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/justinocarneiro161@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const Contact = () => {
         setFormData({ name: '', email: '', message: '' });
         setTimeout(() => setIsSuccess(false), 5000);
       } else if (data.message && data.message.includes('Activation')) {
-        alert('Formulário quase pronto! Verifique seu e-mail (marcosjustino161@gmail.com) para ativar o recebimento de mensagens.');
+        alert('Formulário quase pronto! Verifique seu e-mail (justinocarneiro161@gmail.com) para ativar o recebimento de mensagens.');
         setFormData({ name: '', email: '', message: '' });
       } else {
         alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
@@ -65,13 +65,13 @@ const Contact = () => {
             </p>
 
             <div className="contact__info-links">
-              <a href="mailto:marcosjustino161@gmail.com" className="contact__link-card">
+              <a href="mailto:justinocarneiro161@gmail.com" className="contact__link-card">
                 <div className="contact__link-icon">
                   <Mail size={22} />
                 </div>
                 <div>
                   <p className="contact__link-label">E-mail</p>
-                  <p className="contact__link-value">marcosjustino161@gmail.com</p>
+                  <p className="contact__link-value">justinocarneiro161@gmail.com</p>
                 </div>
               </a>
 
