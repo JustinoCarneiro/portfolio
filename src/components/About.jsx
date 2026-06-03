@@ -19,7 +19,7 @@ const About = () => {
               Sobre <span className="accent">mim</span>
             </h2>
             <p>
-              Desenvolvedor Full Stack e estudante de Engenharia da Computação na UFC,
+              Desenvolvedor Full Stack, atuando na área de Engenharia da Computação,
               com experiência prática em estágios de TI (TV Jangadeiro, CITINOVA — Fundação de Ciência, Tecnologia e Inovação de Fortaleza, GTEL — Grupo de Pesquisa em Telecomunicações, MOBIT — Mobilidade, Iluminação e Tecnologia)
               e cooperação em projetos com o DET (Departamento de Transportes - UFC) e Labifor (Laboratório de Inovação de Fortaleza).
             </p>
