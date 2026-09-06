@@ -1,0 +1,5 @@
+title = "Portfólio — gitleaks"
+
+# Site estático (Vite) sem backend nem credenciais. Regras padrão bastam.
+[extend]
+useDefault = true
